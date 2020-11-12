@@ -19,7 +19,8 @@ public class Exercicio3 {
 		for(x=0;x<linha;x++) {
 			for(y=0;y<coluna;y++) {
 				System.out.print("\nValores para n1: ");
-				n1[x][y] = read.nextInt();		
+				n1[x][y] = (int) (Math.random() * 10);
+
 				
 			}
 		}
@@ -28,7 +29,7 @@ public class Exercicio3 {
 			for(x=0;x<linha;x++) {
 				for(y=0;y<coluna;y++) {
 					System.out.print("\nValores para n1: ");
-					n2[x][y] = read.nextInt();		
+					n2[x][y] = 	(int) (Math.random() * 10);
 					
 				}
 		}
