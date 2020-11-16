@@ -50,7 +50,9 @@ public class desafio {
 		Scanner read = new Scanner(System.in);
 		
 		
-		System.out.print("Bem Vindo a MIIJ Games, A maior loja de Games da internet!\n");
+		System.out.print("Bem Vindo a MIIJ Games, A melhor loja de Games da internet!\n");
+		System.out.print("Sua Aventura começa Aqui!");
+		
 		
 		while(continua2) {
 			
@@ -151,22 +153,24 @@ public class desafio {
 		} while (pagamento != '1' && pagamento != '2' && pagamento != '3' && pagamento != '4');
 			
 		System.out.println("---------------------------------------");
-		System.out.println("\n\nMIIJ Games - 143.944.583/0001-52\n");
+		System.out.println("\nMIIJ Games - 143.944.583/0001-52\n");
 		System.out.println("---------------------------------------");
-		System.out.println("Comprador " + comprador[0] + " - CPF: " + comprador[1]);
-		
+		System.out.println("Comprador " + comprador[0] + " - CPF: " + comprador[1]+"\n");
+		System.out.println("><><><><><><><><><><><><><><><><><><><><");
+		System.out.println("Pedido \t Qtd\tProduto\tValor ");
+		System.out.println("______________________________________");
 		for (int i = 0; i < 10; i++) {
 						if (compras[i] != 0) {
-								System.out.println((numeroNota)+"\t"+compras[i] + "\t" + mercadoria[i] + "\t R$ " + preco[i] + "\n");
+								System.out.println((numeroNota)+"-\t"+compras[i] + "\t" + mercadoria[i] + "\t R$ " + preco[i] + "\n");
 								numeroNota++;
 			}
 						
 		}
-		
+		System.out.println("><><><><><><><><><><><><><><><><><><><><\n");
 		System.out.println("Imposto de ICMS R$ " + Math.round(imposto) + "\n");
-		System.out.println("\n------------------------------------\n");
-		System.out.println("Total da nota: R$ " + Math.round((total + imposto))+ "\n\n");
-		System.out.println("\n------------------------------------\n");
+		System.out.println("------------------------------------\n");
+		System.out.println("Total da nota: R$ " + Math.round((total + imposto))+ "\n");
+		System.out.println("------------------------------------\n");
 		
 		if (pagamento == '3') {
 			parcelas = total / 2;
